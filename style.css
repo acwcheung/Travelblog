@@ -1,0 +1,452 @@
+/*
+Theme Name: Travelblog
+Theme URI: MAMP/htdocs/wordpress/wp-content/travelblog/
+Author: Ashley Cheung
+Description: This theme is specifically developed for travel bloggers looking to share their travel experience and tips with readers
+Version: 1.0
+
+*/
+
+/*general layout*/
+html, body {
+	margin: 0;
+	width: 100%;
+	background-color: #E1E1E1;
+	font-family: Verdana;
+	font-size: 10px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link, 
+a:visited {
+	color: black;
+}
+
+a:hover {
+	color: #585757;
+}
+
+.font-classic {
+	font-family: Comic Sans MS;
+}
+
+.font-script {
+	font-family: Georgia;
+}
+
+/*heading*/
+.brand {
+	font-size: 6rem;
+	text-align: center;
+	margin: 0;
+	font-family: 'Pacifico', cursive;
+}
+
+.heading {
+	font-size: 3.5rem;
+	text-align: center;
+	margin: 20px;	
+	border-bottom: solid 1px #A09F9F;
+}
+
+.sub-heading {
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+	font-weight: normal;
+}
+
+.tag {
+	font-size: 1.3rem;
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+}
+
+.post {
+	text-align: left;
+}
+
+/*header toolbar*/
+.container-navbar {
+	border-bottom: double 5px #A09F9F;
+	margin-bottom: 1.5rem;
+}
+
+.navbar {
+	display: block;
+	margin: auto;
+	width: 80%;
+}
+
+.navbar ul li a:hover, 
+.navbar ul li.current-menu-item a:link,
+.navbar ul li.current-menu-item a:visited {
+	border-bottom: 2px solid black;
+}
+
+.navbar ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+	margin-bottom: 8px;
+}
+
+.navbar ul li {
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+/*featured posts setting*/
+div.container-posts {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+div.second-posts {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+img.top-post-image {
+	width: 65vw;
+	height: 70vh;
+	object-fit: cover;
+}
+
+img.second-post-image {
+	width: 30vw;
+	height: 33vh;
+	object-fit: cover;
+}
+
+h3.post-caption {
+	display: block;
+	position: absolute;
+	font-weight: 100;
+}
+
+h3.top-post-caption {
+	top: 27%;
+	left: 5%;
+	font-size: 3.5rem;
+}
+
+h3.second-post-caption {
+	font-size: 2.5rem;
+	top: 27%;
+	left: 70%;	
+}
+
+h3.third-post-caption {
+	font-size: 2.5rem;
+	top: 63%;
+	left: 70%;	
+}
+
+a.top-post-link:hover,
+a.second-post-link:hover {
+	color: white;
+	background-color: black;
+}
+
+/*where have you been section*/
+div.country-container {
+	width: 80%;
+	margin: auto;
+}
+
+div.location-container {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	border-bottom: dashed 1px #A09F9F;
+}
+
+div.location-image,
+div.location-image img,
+div.location-text {
+	height: 165px;
+	width: 165px;
+	margin-bottom: 2rem;
+	transition: transform 0.5s ease;
+	overflow: hidden;
+}
+
+div.location-image:hover img{
+	transform: scale(1.2);
+}
+
+div.location-text {
+	background-color: white;
+	box-sizing: border-box;
+	margin-right: 5.4rem;
+	padding: 1.3rem;
+	font-size: 1.6rem;
+}
+
+div.location-text p {
+	margin: 0;
+}
+
+/*tips session*/
+div.tips-container {
+	display: flex;
+	justify-content: space-around;
+}
+
+img.tips-image {
+	height: 43vh;
+	width: 22vw;
+	object-fit: cover;
+}
+
+div.tips-items {
+	text-align: center;
+	width: 300px;
+}
+
+/*single post format*/
+div.container-sp {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	font-size: 1.8rem;
+}
+
+div.post-sp {
+	width: 65%;
+	background-color: white;
+	padding: 5rem;
+}
+
+div.post-sp-tips {
+	width: 80%;
+	margin: auto;
+	background-color: white;
+	padding: 5rem;
+	font-size: 1.8rem;
+}
+
+.post-info {
+	background-color: #C8D4F0;
+	padding: 3rem;
+	border-style: none;
+}
+
+h2.post-info-label {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.small-title {
+	position: fixed;
+	top: 0;
+	width: 50%;
+	left: 12%;
+	margin-top: 0; 
+	padding: 20px 30px 10px 0;
+	font-size: 2rem;
+	background-color: white;
+	z-index: 100;
+}
+
+/*Comment form*/
+#reply-title,
+.comments h3 {
+	font-family: Comic Sans MS;
+	font-size: 2rem;
+	margin-top: 5rem;
+}
+
+p.comment-notes,
+p > label {
+	color: grey;
+	font-size: 1.5rem;
+}
+
+form.comment-form {
+	display: flex;
+	flex-direction: column;
+}
+
+#author {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+#comment,
+#author, 
+#email {
+	background: #E1E1E1;
+	border-style: none;
+	font-size: 2rem;
+}
+
+#submit {
+	font-size: 1.5rem;
+	padding: 1rem;
+	background: black;
+	color: white;
+	font-style: italic;
+	border-radius: 5px;
+
+}
+
+p.form-submit {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/*sidebar*/
+.sidebar-heading {
+	font-weight: bold;
+	margin-top: 0;
+}
+
+.comments ol {
+	font-size: 1.5rem;
+	background: #E1E1E1;
+	padding: 20px 50px;
+}
+
+.sidebar {
+	width: 25%;
+	height: 55vh;
+	display: inline-block;
+	margin-left: 15px;
+	right: 10%;
+	box-sizing: border-box;
+	padding: 3rem;
+	background-color: #C8D4F0;
+	transition:  
+}
+
+.sidebar-fixed {
+	position: fixed;
+	top: 5px;
+	right: 10%;
+	width: 20%;
+}
+
+div.container-icon-label {
+	margin-bottom: 20px;
+}
+
+img.post-icon {
+	width: 25px;
+	height: 25px;
+	margin-right: 10px;
+	vertical-align: text-bottom;
+}
+
+p.tag-name {
+	font-style: italic;
+}
+
+/*whereabout page*/
+div.page {
+	width: 80%;
+	margin: auto;
+	background-color: white;
+	padding: 5rem;
+	font-size: 1.8rem;
+}
+
+.map {
+	width: 90%;
+	display: block;
+	margin: auto;
+}
+
+/*footer */
+div.footer {
+	background-color: black;
+	color: white;
+	display: flex;
+	justify-content: space-around;
+	font-size: 1.5rem;
+}
+
+div.footer-column {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	width: 250px;
+}
+
+div.footer-column a {
+	color: white;
+}
+
+div.footer-column ul {
+	list-style: none;
+}
+
+div.footer-column ul li {
+	margin-bottom: 2rem;
+}
+
+div.footer-column ul li a:hover {
+	color: #585757;
+}
+
+div.tag-block {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+div.tag-block a:hover {
+	color: #585757;
+}
+
+input#search {
+	font-size: 1.3rem;
+	padding: 3px;
+}
+
+input#searchsubmit {
+	padding: 10px;	
+	font-size: 3rem;
+	background-color: white;
+	color: black;
+}
+
+a.btn-subscribe {
+	display: block;
+	width: 100px;
+	margin: 1.5rem 0 1rem 0;
+	padding: 1rem;
+	text-align: center;
+	border: 2px solid white;
+	border-radius: 10px;
+	font-weight: 800;
+}
+
+img.media-icon {
+	height: 30px;
+	width: 30px;
+	margin-right: 1rem;
+}
+
+
+/*media queries*/
+@media screen and (max-width: 1200px) {
+	h3.top-post-caption,
+	h3.second-post-caption,
+	h3.third-post-caption {
+		font-size: 2rem;
+	}
+
+} 
+
+
+
+
+
+
+
+
+
